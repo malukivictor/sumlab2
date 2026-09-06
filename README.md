@@ -1,16 +1,50 @@
-# React + Vite
+# GamerVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React storefront for browsing and managing a game catalog.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** — landing page with full-cover background image
+- **Shop** — browse games with live search
+- **Admin Portal** — add new products via a form, view all products
+- Prices displayed in KSh (Kenyan Shillings)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- React Router
+- Tailwind CSS
+- json-server (mock REST API)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+   ```
+   npm install
+   ```
+
+2. Start the mock API server:
+   ```
+   npx json-server db.json --port 3001
+   ```
+
+3. In a separate terminal, start the dev server:
+   ```
+   npm run dev
+   ```
+
+4. Open the app at the URL Vite prints (usually `http://localhost:5173`).
+
+## Project Structure
+
+```
+src/
+├── assets/          # images
+├── components/      # Navbar, Layout
+├── pages/           # Home, Shop, AdminPortal
+db.json              # mock product data
+```
+
+## API
+
+`json-server` serves products at `http://localhost:3001/products` with full CRUD (GET, POST, PATCH, DELETE).
