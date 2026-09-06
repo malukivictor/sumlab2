@@ -26,6 +26,13 @@ function AdminPortal() {
         setForm({ name: "", description: "", price: "" });
       });
   };
+  const handleDelete = (id) => {
+  fetch(`http://localhost:3001/products/${id}`, {
+    method: "DELETE",
+  }).then(() => {
+    setProducts(products.filter((product) => product.id !== id));
+  });
+};
 
   return (
     <div>
@@ -46,7 +53,11 @@ function AdminPortal() {
           placeholder="Description"
           className="px-4 py-2 rounded-full bg-gray-100"
         />
-        <input name="price" value={form.price} onChange={handleFormChange} placeholder="Price" className="px-4 py-2 rounded-full bg-gray-100" />
+        <input name="price" 
+        value={form.price} 
+        onChange={handleFormChange} 
+        placeholder="Price" 
+        className="px-4 py-2 rounded-full bg-gray-100" />
         <button type="submit"
           className="px-4 py-2 rounded-full bg-cyan-500 text-white font-medium"
         >
@@ -60,6 +71,12 @@ function AdminPortal() {
             <p className="font-semibold mb-1">{product.name}</p>
             <p className="text-sm mb-2">{product.description}</p>
             <p className="text-sm font-medium">Ksh {product.price}</p>
+            <button
+              onClick={() => handleDelete(product.id)}
+              className="text-xs text-red-500 mt-2"
+            >
+              Delete
+            </button>
           </div>
         ))}
       </div>

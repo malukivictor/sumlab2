@@ -9,7 +9,7 @@ const Home = () => {
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative">
         <h1 className="text-4xl font-bold mb-4">Welcome to GamerVault</h1>
-        <p className="text-lg max-w-md">Get your game within Nairobi and dominate!!</p>
+        <p className="text-lg max-w-md ">Get your game,set-up and dominate!!</p>
       </div>
     </div>
   );

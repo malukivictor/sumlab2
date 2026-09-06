@@ -7,18 +7,6 @@
       "price": 6999
     },
     {
-      "id": "2",
-      "name": "Elden Ring",
-      "description": "Explore a vast fantasy world, battle powerful enemies, and become the next Elden Lord.",
-      "price": 6500
-    },
-    {
-      "id": "3",
-      "name": "Baldur's Gate 3",
-      "description": "Create your hero, build a party, and shape an epic fantasy adventure through your choices.",
-      "price": 8599
-    },
-    {
       "id": "4",
       "name": "The Witcher 3: Wild Hunt",
       "description": "Play as Geralt of Rivia, a monster hunter searching for his adopted daughter across a dangerous fantasy world.",
@@ -60,5 +48,6 @@
       "description": "Join Astro on a colorful platforming adventure filled with exciting worlds, playful challenges, and clever abilities.",
       "price": 7999
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
