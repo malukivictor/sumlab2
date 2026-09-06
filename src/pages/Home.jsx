@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div
       className="relative flex flex-col items-center justify-center text-center text-white py-32 -mx-4 -my-8 bg-cover bg-center min-h-[80vh]"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url(${bgImage})` }} 
     >
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative">
