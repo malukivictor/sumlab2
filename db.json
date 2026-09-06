@@ -3,61 +3,61 @@
     {
       "id": "1",
       "name": "The Last of Us Part II",
-      "description": "An emotional action-adventure game developed by Naughty Dog.",
+      "description": "Follow Ellie on a dangerous journey of survival, revenge, and difficult choices in a post-apocalyptic world.",
       "price": 6999
     },
     {
       "id": "2",
       "name": "Elden Ring",
-      "description": "An open-world action RPG developed by FromSoftware.",
+      "description": "Explore a vast fantasy world, battle powerful enemies, and become the next Elden Lord.",
       "price": 6500
     },
     {
       "id": "3",
       "name": "Baldur's Gate 3",
-      "description": "A story-rich fantasy role-playing game developed by Larian Studios.",
+      "description": "Create your hero, build a party, and shape an epic fantasy adventure through your choices.",
       "price": 8599
     },
     {
       "id": "4",
       "name": "The Witcher 3: Wild Hunt",
-      "description": "An open-world fantasy RPG following monster hunter Geralt of Rivia.",
+      "description": "Play as Geralt of Rivia, a monster hunter searching for his adopted daughter across a dangerous fantasy world.",
       "price": 5200
     },
     {
       "id": "5",
       "name": "God of War",
-      "description": "An action-adventure game following Kratos and his son Atreus.",
+      "description": "Join Kratos and his son Atreus as they journey through Norse mythology and face powerful gods and monsters.",
       "price": 5699
     },
     {
       "id": "6",
       "name": "Red Dead Redemption 2",
-      "description": "An open-world western adventure developed by Rockstar Games.",
+      "description": "Experience the life of outlaw Arthur Morgan as he and his gang struggle to survive in the American frontier.",
       "price": 6999
     },
     {
       "id": "7",
       "name": "The Legend of Zelda: Breath of the Wild",
-      "description": "An open-world adventure game set in the kingdom of Hyrule.",
+      "description": "Explore the vast kingdom of Hyrule, uncover its secrets, and help Link defeat the ancient evil threatening the land.",
       "price": 6999
     },
     {
       "id": "8",
       "name": "Sekiro: Shadows Die Twice",
-      "description": "A challenging action-adventure game set in feudal Japan.",
+      "description": "Become a skilled shinobi seeking revenge and rescue while battling deadly warriors in feudal Japan.",
       "price": 5500
     },
     {
       "id": "9",
       "name": "It Takes Two",
-      "description": "A cooperative adventure game designed for two players.",
+      "description": "Team up with a friend as a couple transformed into tiny dolls and work together to overcome creative challenges.",
       "price": 4500
     },
     {
       "id": "10",
       "name": "Astro Bot",
-      "description": "A colorful 3D platforming adventure featuring Astro and his robotic friends.",
+      "description": "Join Astro on a colorful platforming adventure filled with exciting worlds, playful challenges, and clever abilities.",
       "price": 7999
     }
   ]
