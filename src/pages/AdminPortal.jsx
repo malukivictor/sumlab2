@@ -1,39 +1,21 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useProducts } from "../hook/useProducts";
 
 function AdminPortal() {
-  const [products, setProducts] = useState([]);
+  const { products, addProduct, deleteProduct } = useProducts();
   const [form, setForm] = useState({ name: "", description: "", price: "" });
-    const handleFormChange = (e) => {
+
+  const handleFormChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  useEffect(() => {
-    fetch("http://localhost:3001/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
-
 
   const handleAddProduct = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/products", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...form, price: Number(form.price) }),
-    })
-      .then((res) => res.json())
-      .then((newProduct) => {
-        setProducts([...products, newProduct]);
-        setForm({ name: "", description: "", price: "" });
-      });
+    addProduct({ ...form, price: Number(form.price) });
+    setForm({ name: "", description: "", price: "" });
   };
-  const handleDelete = (id) => {
-  fetch(`http://localhost:3001/products/${id}`, {
-    method: "DELETE",
-  }).then(() => {
-    setProducts(products.filter((product) => product.id !== id));
-  });
-};
- return (
+
+  return (
     <div className="flex flex-col items-center text-center">
       <h1 className="text-2xl font-bold mb-6">Game Wizard Portal</h1>
 
@@ -42,25 +24,22 @@ function AdminPortal() {
           name="name"
           value={form.name}
           onChange={handleFormChange}
-          placeholder="Product name"
-          className="px-4 py-2 rounded-full bg-gray-100"
-        />
+          placeholder="Game title"
+          className="px-4 py-2 rounded-full bg-gray-100" />
         <input
           name="description"
           value={form.description}
           onChange={handleFormChange}
           placeholder="Game description"
-          className="px-4 py-2 rounded-full bg-gray-100"
-        />
-        <input name="price" 
-        value={form.price} 
-        onChange={handleFormChange} 
-        placeholder="Game price" 
-        className="px-4 py-2 rounded-full bg-gray-100" />
-        <button type="submit"
-          className="px-4 py-2 rounded-full bg-cyan-500 text-white font-medium"
-        >
-          Add Game
+          className="px-4 py-2 rounded-full bg-gray-100" />
+        <input
+          name="price"
+          value={form.price}
+          onChange={handleFormChange}
+          placeholder="Game price"
+          className="px-4 py-2 rounded-full bg-gray-100"/>
+        <button type="submit" className="px-4 py-2 rounded-full bg-cyan-500 text-white font-medium">
+          Add a Game
         </button>
       </form>
 
@@ -71,9 +50,8 @@ function AdminPortal() {
             <p className="text-sm mb-2">{product.description}</p>
             <p className="text-sm font-medium">Ksh {product.price}</p>
             <button
-              onClick={() => handleDelete(product.id)}
-              className="text-xs text-red-500 mt-2"
-            >
+              onClick={() => deleteProduct(product.id)}
+              className="text-xs text-red-500 mt-2">
               Delete Game
             </button>
           </div>
