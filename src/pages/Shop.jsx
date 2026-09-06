@@ -29,7 +29,7 @@ function Shop() {
           <div key={product.id} className="bg-white rounded-lg p-4 text-center shadow-sm">
             <p className="font-semibold mb-2">{product.name}</p>
             <p className="text-sm mb-2">{product.description}</p>
-            <p className="text-sm font-medium">${product.price}</p>
+            <p className="text-sm font-medium">Ksh {product.price}</p>
           </div>
         ))}
       </div>

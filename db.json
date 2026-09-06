@@ -2,27 +2,63 @@
   "products": [
     {
       "id": "1",
-      "name": "Product One",
-      "description": "Description here",
-      "price": 10
+      "name": "The Last of Us Part II",
+      "description": "An emotional action-adventure game developed by Naughty Dog.",
+      "price": 6999
     },
     {
       "id": "2",
-      "name": "Product Two",
-      "description": "Description here",
-      "price": 15
+      "name": "Elden Ring",
+      "description": "An open-world action RPG developed by FromSoftware.",
+      "price": 6500
     },
     {
       "id": "3",
-      "name": "Product Three",
-      "description": "Description here",
-      "price": 20
+      "name": "Baldur's Gate 3",
+      "description": "A story-rich fantasy role-playing game developed by Larian Studios.",
+      "price": 8599
     },
     {
-      "name": "bees",
-      "description": "honey",
-      "price": 3,
-      "id": "wfxSB8zfoYU"
+      "id": "4",
+      "name": "The Witcher 3: Wild Hunt",
+      "description": "An open-world fantasy RPG following monster hunter Geralt of Rivia.",
+      "price": 5200
+    },
+    {
+      "id": "5",
+      "name": "God of War",
+      "description": "An action-adventure game following Kratos and his son Atreus.",
+      "price": 5699
+    },
+    {
+      "id": "6",
+      "name": "Red Dead Redemption 2",
+      "description": "An open-world western adventure developed by Rockstar Games.",
+      "price": 6999
+    },
+    {
+      "id": "7",
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "description": "An open-world adventure game set in the kingdom of Hyrule.",
+      "price": 6999
+    },
+    {
+      "id": "8",
+      "name": "Sekiro: Shadows Die Twice",
+      "description": "A challenging action-adventure game set in feudal Japan.",
+      "price": 5500
+    },
+    {
+      "id": "9",
+      "name": "It Takes Two",
+      "description": "A cooperative adventure game designed for two players.",
+      "price": 4500
+    },
+    {
+      "id": "10",
+      "name": "Astro Bot",
+      "description": "A colorful 3D platforming adventure featuring Astro and his robotic friends.",
+      "price": 7999
     }
   ]
 }
