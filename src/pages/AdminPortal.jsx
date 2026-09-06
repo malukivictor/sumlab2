@@ -33,10 +33,9 @@ function AdminPortal() {
     setProducts(products.filter((product) => product.id !== id));
   });
 };
-
-  return (
-    <div>
-      <h1 className="text-2xl font-bold mb-6">Admin Portal</h1>
+ return (
+    <div className="flex flex-col items-center text-center">
+      <h1 className="text-2xl font-bold mb-6">Game Wizard Portal</h1>
 
       <form onSubmit={handleAddProduct} className="mb-8 flex flex-col gap-3 max-w-sm">
         <input
@@ -50,18 +49,18 @@ function AdminPortal() {
           name="description"
           value={form.description}
           onChange={handleFormChange}
-          placeholder="Description"
+          placeholder="Game description"
           className="px-4 py-2 rounded-full bg-gray-100"
         />
         <input name="price" 
         value={form.price} 
         onChange={handleFormChange} 
-        placeholder="Price" 
+        placeholder="Game price" 
         className="px-4 py-2 rounded-full bg-gray-100" />
         <button type="submit"
           className="px-4 py-2 rounded-full bg-cyan-500 text-white font-medium"
         >
-          Add Product
+          Add Game
         </button>
       </form>
 

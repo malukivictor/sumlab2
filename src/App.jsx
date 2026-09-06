@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/NavBar.jsx'   // match actual filename casing
+import Navbar from './components/NavBar.jsx'   
 import Home from './pages/Home.jsx'
 import Shop from './pages/Shop.jsx'
 import AdminPortal from './pages/AdminPortal.jsx'
