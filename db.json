@@ -48,6 +48,4 @@
       "description": "Join Astro on a colorful platforming adventure filled with exciting worlds, playful challenges, and clever abilities.",
       "price": 7999
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
-}
+  ]
