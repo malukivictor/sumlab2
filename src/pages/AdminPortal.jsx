@@ -74,7 +74,7 @@ function AdminPortal() {
               onClick={() => handleDelete(product.id)}
               className="text-xs text-red-500 mt-2"
             >
-              Delete
+              Delete Game
             </button>
           </div>
         ))}
